@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Illini Events Hub – Prototype</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Illini Events Hub</h1>
+      <p class="tagline">Discover what's happening on campus today.</p>
+      <div class="filters">
+        <label for="category">Category</label>
+        <select id="category">
+          <option value="all">All</option>
+        </select>
+        <label for="date">Date</label>
+        <input type="date" id="date" />
+      </div>
+    </header>
+    <main>
+      <section class="deck">
+        <article class="card" id="event-card">
+          <div class="card-category"></div>
+          <h2 class="card-title"></h2>
+          <p class="card-time"></p>
+          <p class="card-location"></p>
+          <p class="card-description"></p>
+          <ul class="card-tags"></ul>
+        </article>
+        <div class="actions">
+          <button id="skip" aria-label="Skip event">👎 Not for me</button>
+          <button id="interested" aria-label="Save event">👍 I'm interested</button>
+        </div>
+      </section>
+      <aside class="saved">
+        <h3>Saved events</h3>
+        <p class="saved-empty">Swipe right on an event to save it.</p>
+        <ul id="saved-list"></ul>
+      </aside>
+    </main>
+    <footer>
+      <small>
+        Prototype experience for the Illini Events Hub concept. Data is static and lives entirely in your browser.
+      </small>
+    </footer>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

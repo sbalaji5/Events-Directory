@@ -2,6 +2,29 @@
 
 Illini Events Hub is a campus-wide discovery and engagement platform tailored for University of Illinois Urbana-Champaign (UIUC) students. It centralizes event listings, enables rich categorization, and provides personalized recommendations through an intuitive swipe-based interface.
 
+## Try the interactive prototype
+
+This repository now includes a lightweight front-end mock that demonstrates the swipe-inspired discovery experience. You can open it directly in your browser or serve it locally if you prefer a short-lived web server.
+
+### Option 1 – Open the file directly
+
+1. Navigate to [`frontend/index.html`](frontend/index.html) in your file explorer.
+2. Double-click the file to launch it in your default browser.
+
+### Option 2 – Serve it locally (recommended for accurate fonts/assets)
+
+```bash
+cd frontend
+python -m http.server 5173
+# visit http://localhost:5173
+```
+
+The prototype ships with a curated set of campus events and supports basic interactions:
+
+- Filter by category or specific date.
+- "Swipe" through events using the **Not for me** or **I'm interested** buttons.
+- View your saved (swiped right) events in the sidebar.
+
 ## Goals
 - **Centralize campus events** posted by registered organizations, departments, and students.
 - **Reduce information overload** by organizing events into discoverable categories (e.g., Tech, Entrepreneurship, Sports, Arts).
